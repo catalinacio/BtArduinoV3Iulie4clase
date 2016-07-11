@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/front_btn"
+            android:id="@+id/front_btn"
+            android:textColor="#2E0B0B"
+            android:textSize="30sp"
+            android:background="@drawable/button_draw"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:clickable="true"
+            android:onClick="sendmyCharMessage"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/back_btn" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_btn"
+            android:id="@+id/back_btn"
+            android:clickable="true"
+            android:textColor="#2E0B0B"
+            android:textSize="30sp"
+            android:background="@drawable/button_draw"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:layout_below="@+id/left_btn"
+            android:layout_toEndOf="@+id/left_btn" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_action"
+            android:id="@+id/bt_action"
+            android:layout_below="@+id/back_btn"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:onClick="onClickConnect" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BT en"
+            android:id="@+id/switch_BT"
+            android:layout_alignBottom="@+id/front_btn"
+            android:layout_toEndOf="@+id/lights_btn_test" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:layout_below="@+id/back_btn"
+            android:layout_toEndOf="@+id/right_btn" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth"
+            android:id="@+id/lights_btn_test"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/radioButton2" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gear1speed"
+            android:id="@+id/radioButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/left_btn"
+            android:id="@+id/left_btn"
+            android:textColor="#EBFF36"
+            android:textSize="31sp"
+            android:background="@drawable/btn_left_draw"
+            android:layout_alignTop="@+id/right_btn"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/right_btn"
+            android:id="@+id/right_btn"
+            android:layout_below="@+id/front_btn"
+            android:layout_toEndOf="@+id/front_btn"
+            android:textColor="#EBFF36"
+            android:textSize="31sp"
+            android:background="@drawable/btn_right_draw"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\@strings/gear2speed"
+            android:id="@+id/radioButton2"
+            android:layout_alignTop="@+id/radioButton"
+            android:layout_toEndOf="@+id/radioButton"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_view"
+            android:text="test"
+            android:textSize="50dp"
+            android:layout_alignBottom="@+id/progressBar"
+            android:layout_toEndOf="@+id/left_btn" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connect"
+            android:id="@+id/btn_connect_TEST"
+            android:clickable="true"
+            android:onClick="onClickConnect"
+            android:layout_below="@+id/test_view"
+            android:layout_toEndOf="@+id/lights_btn_test" />
+
+</RelativeLayout>

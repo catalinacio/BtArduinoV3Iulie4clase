@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MY BT ARDUINO APP</string>
+    <string name="front_btn">Front</string>
+    <string name="back_btn">Back</string>
+    <string name="left_btn">Left</string>
+    <string name="right_btn">Right</string>
+    <string name="bt_action">Bluetooth</string>
+    <string name="title_activity_bluetooth_arduino">BluetoothArduino</string>
+    <string name="action_settings">Settings</string>
+    <string name="bt_en">BT en</string>
+    <string name="begin_discovery">Begin Discovery</string>
+    <string name="bluetooth">test btn</string>
+    <string name="gear1speed">gear1speed</string>
+    <string name="title_activity_bt">BtActivity</string>
+    <string name="scanning">scanning</string>
+    <string name="list">list</string>
+    <string name="scan">Scan</string>
+    <string name="send_for_test">Send for TEST</string>
+    <string name="send_char">SendChar</string>
+    <string name="connect_me_from_btclass">connect_ME_FROM_BTCLASS</string>
+
+
+</resources>
+
+
